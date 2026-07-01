@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.aracoeli20.it/sitemap.xml
