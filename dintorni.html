@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#203050">
+<title>Aracoeli 20 · Cassano delle Murge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --dark:#203050; --ocra:#B06E27; --grano:#CD9A48; --blu:#3A5A6E;
+  --cream:#F6F1E8; --card:#ffffff; --ink:#26303f; --muted:#6b7585; --line:#e7ddcd;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--cream);font-family:var(--sans);color:var(--ink);
+  font-weight:300;padding-bottom:44px;-webkit-font-smoothing:antialiased}
+.hero{background:var(--dark);color:#fff;padding:26px 20px 24px;text-align:center}
+.hero h1{font-family:var(--serif);font-size:31px;font-weight:600;margin:0;letter-spacing:.01em}
+.hero .s{font-size:13px;opacity:.72;margin-top:5px;font-weight:300;letter-spacing:.04em}
+.wrap{max-width:640px;margin:0 auto;padding:18px 15px 0}
+.intro{font-size:14.5px;line-height:1.65;color:var(--ink);margin-bottom:18px;text-align:center}
+.cat{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:12px;overflow:hidden}
+.cat>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:13px;padding:17px 18px}
+.cat>summary::-webkit-details-marker{display:none}
+.cat .ic{font-size:23px;line-height:1}
+.cat .tt{flex:1;font-family:var(--serif);font-size:21px;font-weight:600;color:var(--dark)}
+.cat .ar{font-size:13px;color:var(--grano);transition:transform .2s;font-weight:500}
+.cat[open] .ar{transform:rotate(90deg)}
+.cat .body{padding:0 18px 8px}
+.p{display:flex;align-items:flex-start;gap:12px;padding:13px 0;border-top:1px solid var(--line)}
+.p .tx{flex:1;min-width:0}
+.p .nm{font-size:15.5px;font-weight:500;color:var(--dark);line-height:1.35}
+.p .ds{font-size:13px;color:var(--muted);line-height:1.5;margin-top:3px}
+.p a{flex-shrink:0;text-decoration:none;background:var(--dark);color:#fff;font-size:12.5px;
+  font-weight:500;padding:9px 15px;border-radius:20px;white-space:nowrap;margin-top:2px}
+.p a:active{background:var(--blu)}
+.pilg{background:#F3EDE1;border:1px solid var(--grano)}
+.pilg .tt{color:var(--ocra)}
+.foot{max-width:640px;margin:22px auto 0;padding:0 15px}
+.wa{display:flex;align-items:center;justify-content:center;gap:9px;background:#25D366;color:#fff;
+  text-decoration:none;font-size:15.5px;font-weight:500;padding:15px;border-radius:14px}
+.note{text-align:center;font-size:12px;color:var(--muted);line-height:1.6;margin-top:16px}
+#arLang{position:fixed;top:12px;right:12px;z-index:99;display:flex;background:rgba(255,255,255,.95);
+  border:1px solid rgba(0,0,0,.1);border-radius:22px;padding:3px;box-shadow:0 2px 10px rgba(0,0,0,.14)}
+#arLang button{border:none;background:none;font-family:inherit;font-size:12px;font-weight:600;
+  padding:6px 13px;border-radius:20px;color:var(--muted);cursor:pointer}
+#arLang button.on{background:var(--dark);color:#fff}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Cassano delle Murge</h1>
+  <div class="s">I nostri posti preferiti · Aracoeli 20</div>
+</div>
+
+<div class="wrap">
+  <div class="intro" data-t="intro">Quelli che consigliamo davvero, non tutti quelli che ci sono. Tocca una voce per aprirla su Google: lì trovi orari, telefono e come arrivarci, sempre aggiornati.</div>
+
+  <details class="cat pilg" id="cat-pilg">
+    <summary><span class="ic">🥾</span><span class="tt" data-t="c-pilg">Per chi cammina</span><span class="ar">›</span></summary>
+    <div class="body">
+      <div class="p"><div class="tx"><div class="nm">Il menù del pellegrino</div><div class="ds" data-t="d-menu">Piatto completo a prezzo fisso per chi è in cammino</div></div><a href="https://maps.app.goo.gl/xhzzdwMs6g46AZ5c8" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">La salumeria storica</div><div class="ds" data-t="d-salum">Per farsi il panino da portare sul sentiero</div></div><a href="https://maps.app.goo.gl/T28jJ7jvcKG3ygvu8" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Lavanderia H24</div><div class="ds" data-t="d-lav">Aperta sempre, anche la domenica</div></div><a href="https://maps.app.goo.gl/A8xWS7aRD9HojpLM6" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+    </div>
+  </details>
+
+  <details class="cat">
+    <summary><span class="ic">🍽</span><span class="tt" data-t="c-eat">Dove mangiare</span><span class="ar">›</span></summary>
+    <div class="body">
+      <div class="p"><div class="tx"><div class="nm">AVA · Antica Vineria Avanguardista</div><div class="ds" data-t="d-ava">Cucina eccellente, ragazzi giovani</div></div><a href="https://maps.app.goo.gl/9dgKwSZXM96YopQS7" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Ristorante gourmet dello chef Gianni</div><div class="ds" data-t="d-gianni">Per una cena importante</div></div><a href="https://maps.app.goo.gl/7XoXXBqJsC5Y2wsf7" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Ristorante Stefy</div><div class="ds" data-t="d-stefy">Quando hai voglia di pesce</div></div><a href="https://maps.app.goo.gl/p65XmKSAifhfqdC88" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Grill &amp; Barbecue</div><div class="ds" data-t="d-grill">Se sei un carnivoro verace · in Piazza Garibaldi</div></div><a href="https://maps.app.goo.gl/Ub4iZZk8PcMDvcvf7" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Baby di Checca</div><div class="ds" data-t="d-baby">Se ami il formaggio</div></div><a href="https://maps.app.goo.gl/AMDSDKW2Z9x5S9BH6" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Pizze e Panzerotti «Da Nicola»</div><div class="ds" data-t="d-nicola">La storia del panzerotto · in Piazza Garibaldi</div></div><a href="https://maps.app.goo.gl/UNMLWuhbrcYpgrLG6" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Antichi Sapori</div><div class="ds" data-t="d-antichi">The best pizza in town · in Piazza Dante, dove parcheggi</div></div><a href="https://maps.app.goo.gl/Rr3rvNyd6hbdjppL7" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Pecora Nera Country Pub</div><div class="ds" data-t="d-pecora">La storia del pub nel Sud Italia</div></div><a href="https://maps.app.goo.gl/ZYeF2dydB3id6BQH8" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+    </div>
+  </details>
+
+  <details class="cat">
+    <summary><span class="ic">🛒</span><span class="tt" data-t="c-shop">Dove fare la spesa</span><span class="ar">›</span></summary>
+    <div class="body">
+      <div class="p"><div class="tx"><div class="nm">Supermercato</div><div class="ds" data-t="d-super">Per la spesa di tutti i giorni</div></div><a href="https://maps.app.goo.gl/LjdGfBZ2mJfyZ2fo9" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Taralli di qualità</div><div class="ds" data-t="d-taralli">E non solo · da portare a casa</div></div><a href="https://maps.app.goo.gl/ZSEewSLmwELBUUcm8" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+    </div>
+  </details>
+
+  <details class="cat">
+    <summary><span class="ic">📞</span><span class="tt" data-t="c-util">Numeri utili</span><span class="ar">›</span></summary>
+    <div class="body">
+      <div class="p"><div class="tx"><div class="nm">Farmacia</div><div class="ds" data-t="d-farm">I turni notturni sono esposti in vetrina</div></div><a href="https://maps.app.goo.gl/AQcgva8Tmf34uZVr9" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Ospedale · Pronto soccorso</div><div class="ds" data-t="d-osp">Per le emergenze il numero unico è il 112</div></div><a href="https://maps.app.goo.gl/EttwxkGckFrPoWr38" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Ufficio postale</div><div class="ds" data-t="d-post">Aperto la mattina</div></div><a href="https://maps.app.goo.gl/W1RrGc7TN2nxZMC26" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Banca e bancomat</div><div class="ds" data-t="d-atm1">A pochi passi da noi</div></div><a href="https://maps.app.goo.gl/WsNBy32wDjCFBgDu5" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Banca e bancomat</div><div class="ds" data-t="d-atm2">La seconda, poco più avanti</div></div><a href="https://maps.app.goo.gl/oSxeaS53XZzQiFgN6" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Lavanderia H24</div><div class="ds" data-t="d-lav2">Aperta sempre</div></div><a href="https://maps.app.goo.gl/A8xWS7aRD9HojpLM6" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+    </div>
+  </details>
+
+  <details class="cat">
+    <summary><span class="ic">🏛</span><span class="tt" data-t="c-see">Cosa vedere</span><span class="ar">›</span></summary>
+    <div class="body">
+      <div class="p"><div class="tx"><div class="nm">Chiesa Madre</div><div class="ds" data-t="d-chiesa">Nel centro storico, a due passi</div></div><a href="https://maps.app.goo.gl/i7fagnbusU8ZmXLCA" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Santuario della nostra patrona</div><div class="ds" data-t="d-sant">Il luogo più caro ai cassanesi</div></div><a href="https://maps.app.goo.gl/nCgpddy8y9FSE4t4A" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Museo civico</div><div class="ds" data-t="d-museo">La storia del paese in poche sale</div></div><a href="https://maps.app.goo.gl/4VM64NF1ujQF2Keb6" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Palazzo storico e biblioteca</div><div class="ds" data-t="d-bibl">Vale la sosta anche solo per il cortile</div></div><a href="https://maps.app.goo.gl/k1tRjW6fdZGEjMUs6" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Info point</div><div class="ds" data-t="d-info">Mappe e informazioni sul territorio</div></div><a href="https://maps.app.goo.gl/468bbP6qfdYGJVuX9" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">La foresta più grande della provincia</div><div class="ds" data-t="d-foresta">Ombra e sentieri, bella in ogni stagione</div></div><a href="https://maps.app.goo.gl/7YDZzMwrb57vA1C68" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Un posto unico da scoprire</div><div class="ds" data-t="d-unico">Non diciamo altro: andateci</div></div><a href="https://maps.app.goo.gl/1S4RYG3zy4UqvH4W8" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Divertimento per grandi e piccoli</div><div class="ds" data-t="d-div">Se viaggiate con bambini</div></div><a href="https://maps.app.goo.gl/LT6HQ9vQMVXht8q17" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+      <div class="p"><div class="tx"><div class="nm">Per gli amanti della velocità</div><div class="ds" data-t="d-vel">Il posto giusto</div></div><a href="https://maps.app.goo.gl/U1WLTaoWzHYoFogt7" target="_blank" rel="noopener" data-t="btn">Guarda</a></div>
+    </div>
+  </details>
+</div>
+
+<div class="foot">
+  <a class="wa" href="https://wa.me/393272771529" target="_blank" rel="noopener"><span>💬</span><span data-t="wa">Per qualsiasi cosa scrivici</span></a>
+  <div class="note" data-t="note">Orari e numeri di telefono li trovi su Google, sempre aggiornati.<br>Aracoeli 20 · www.aracoeli20.it</div>
+</div>
+
+<script>
+(function(){
+  var D={
+    "Cassano delle Murge":"Cassano delle Murge",
+    "I nostri posti preferiti · Aracoeli 20":"Our favourite places · Aracoeli 20",
+    "Aracoeli 20 · Cassano delle Murge":"Aracoeli 20 · Cassano delle Murge",
+    "intro":"The ones we really recommend, not every place in town. Tap an entry to open it on Google: opening hours, phone number and directions are always up to date there.",
+    "btn":"Open",
+    "c-pilg":"For those walking",
+    "d-menu":"Set-price full meal for pilgrims",
+    "d-salum":"To make yourself a sandwich for the trail",
+    "d-lav":"Open around the clock, Sundays too",
+    "c-eat":"Where to eat",
+    "d-ava":"Excellent cooking, a young team",
+    "d-gianni":"For a special dinner",
+    "d-stefy":"When you feel like fish",
+    "d-grill":"For serious meat lovers · in Piazza Garibaldi",
+    "d-baby":"If you love cheese",
+    "d-nicola":"The home of the panzerotto · in Piazza Garibaldi",
+    "d-antichi":"The best pizza in town · in Piazza Dante, where you park",
+    "d-pecora":"A piece of pub history in southern Italy",
+    "c-shop":"Where to shop",
+    "d-super":"For everyday groceries",
+    "d-taralli":"Proper taralli and more · to take home",
+    "c-util":"Useful places",
+    "d-farm":"Night duty rota posted in the window",
+    "d-osp":"For emergencies the number is 112",
+    "d-post":"Open in the mornings",
+    "d-atm1":"A short walk from us",
+    "d-atm2":"The second one, a little further on",
+    "d-lav2":"Always open",
+    "c-see":"What to see",
+    "d-chiesa":"In the old town, two minutes away",
+    "d-sant":"The place dearest to the people of Cassano",
+    "d-museo":"The town's history in a few rooms",
+    "d-bibl":"Worth a stop for the courtyard alone",
+    "d-info":"Maps and local information",
+    "d-foresta":"Shade and trails, lovely in every season",
+    "d-unico":"We won't say more: just go",
+    "d-div":"If you are travelling with children",
+    "d-vel":"The right place",
+    "wa":"Message us for anything",
+    "note":"Opening hours and phone numbers are on Google, always up to date.<br>Aracoeli 20 · www.aracoeli20.it"
+  };
+  var NM={
+    "Il menù del pellegrino":"The pilgrim menu",
+    "La salumeria storica":"The old deli",
+    "Lavanderia H24":"24h laundrette",
+    "Ristorante gourmet dello chef Gianni":"Chef Gianni's gourmet restaurant",
+    "Ristorante Stefy":"Stefy Restaurant",
+    "Pizze e Panzerotti «Da Nicola»":"Pizza and panzerotti «Da Nicola»",
+    "Supermercato":"Supermarket",
+    "Taralli di qualità":"Proper taralli",
+    "Farmacia":"Pharmacy",
+    "Ospedale · Pronto soccorso":"Hospital · A&E",
+    "Ufficio postale":"Post office",
+    "Banca e bancomat":"Bank and cash machine",
+    "Chiesa Madre":"Mother Church",
+    "Santuario della nostra patrona":"Sanctuary of our patron saint",
+    "Museo civico":"Town museum",
+    "Palazzo storico e biblioteca":"Historic palace and library",
+    "Info point":"Tourist info point",
+    "La foresta più grande della provincia":"The largest forest in the province",
+    "Un posto unico da scoprire":"A unique place to discover",
+    "Divertimento per grandi e piccoli":"Fun for grown-ups and children",
+    "Per gli amanti della velocità":"For speed lovers"
+  };
+
+  function pick(){
+    try{
+      var p=new URLSearchParams(location.search).get('lang');
+      if(p==='en'||p==='it'){localStorage.setItem('ar_lang',p);return p}
+      var st=localStorage.getItem('ar_lang');
+      if(st==='en'||st==='it')return st;
+    }catch(e){}
+    var n=(navigator.language||navigator.userLanguage||'it').toLowerCase();
+    return n.indexOf('it')===0?'it':'en';
+  }
+
+  function badge(cur){
+    var w=document.createElement('div');
+    w.id='arLang';
+    w.innerHTML='<button data-l="it"'+(cur==='it'?' class="on"':'')+'>IT</button>'+
+                '<button data-l="en"'+(cur==='en'?' class="on"':'')+'>EN</button>';
+    w.addEventListener('click',function(e){
+      var b=e.target; while(b&&b.tagName!=='BUTTON')b=b.parentNode;
+      if(!b)return;
+      var l=b.getAttribute('data-l'); if(l===cur)return;
+      try{localStorage.setItem('ar_lang',l)}catch(err){}
+      location.replace(location.pathname+(l==='en'?'?lang=en':''));
+    });
+    document.body.appendChild(w);
+  }
+
+  function go(){
+    var l=pick();
+    if(l==='en'){
+      document.documentElement.setAttribute('lang','en');
+      if(D[document.title])document.title=D[document.title];
+      var e=document.querySelectorAll('[data-t]');
+      for(var i=0;i<e.length;i++){
+        var k=e[i].getAttribute('data-t');
+        if(D[k])e[i].innerHTML=D[k];
+      }
+      var n=document.querySelectorAll('.nm');
+      for(var j=0;j<n.length;j++){
+        var t=n[j].textContent.trim();
+        if(NM[t])n[j].textContent=NM[t];
+      }
+      var h=document.querySelector('.hero .s');
+      if(h)h.textContent=D["I nostri posti preferiti · Aracoeli 20"];
+    }
+    // il riquadro pellegrino si apre da solo quando arrivi da un link pellegrino
+    try{
+      var tp=new URLSearchParams(location.search).get('type');
+      var pg=document.getElementById('cat-pilg');
+      if(pg && tp && tp.indexOf('pellegrin')===0) pg.setAttribute('open','');
+    }catch(e){}
+    badge(l);
+  }
+
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);
+  else go();
+})();
+</script>
+</body>
+</html>
