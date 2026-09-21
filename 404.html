@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagina non trovata — Aracoeli 20</title>
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/png" href="/img/logo-aracoeli20.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bianco:#FBFAF6;
+  --pietra:#DCD4C0;
+  --verdone:#1F2920;
+  --ocra:#B06E27;
+  --grano:#D9B26A;
+  --serif:'Cormorant Garamond',serif;
+  --sans:'Jost',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(160deg,var(--verdone) 0%,#16201a 100%);
+  color:var(--bianco);font-family:var(--sans);font-weight:300;
+  padding:40px 16px;text-align:center;
+}
+.box{max-width:560px}
+.logo{height:58px;width:auto;margin-bottom:34px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.35))}
+.code{
+  font-family:var(--sans);font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--grano);margin-bottom:18px;
+}
+h1{
+  font-family:var(--serif);font-weight:500;font-size:clamp(2rem,7vw,3rem);
+  line-height:1.15;margin-bottom:20px;
+}
+h1 i{font-style:italic;color:var(--grano)}
+p{font-size:1.05rem;line-height:1.65;color:rgba(251,250,246,.82);margin-bottom:36px}
+.actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+a.btn{
+  font-family:var(--sans);font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;
+  text-decoration:none;padding:15px 30px;transition:all .3s;display:inline-block;
+}
+a.home{background:var(--bianco);color:var(--verdone)}
+a.home:hover{background:var(--grano)}
+a.wa{background:#25D366;color:#fff}
+a.wa:hover{filter:brightness(1.08)}
+a.line{border:1px solid rgba(251,250,246,.45);color:var(--bianco)}
+a.line:hover{border-color:var(--grano);color:var(--grano)}
+.alt{margin-top:40px;font-size:.88rem;color:rgba(251,250,246,.55)}
+.alt a{color:rgba(251,250,246,.8)}
+.alt a:hover{color:var(--grano)}
+@media(max-width:520px){a.btn{width:100%}}
+</style>
+</head>
+<body>
+  <main class="box">
+    <img class="logo" src="/img/logo-aracoeli20.webp" width="256" height="256" alt="Aracoeli 20">
+    <div class="code">Errore 404</div>
+    <h1>Questa pagina <i>non c'è</i></h1>
+    <p>Forse l'indirizzo è cambiato, o c'è un refuso nel link. La casa però è sempre qui, in Via Aracoeli 20 a Cassano delle Murge.</p>
+    <div class="actions">
+      <a class="btn home" href="/">Torna alla home</a>
+      <a class="btn line" href="/#camere">Vedi le camere</a>
+      <a class="btn wa" href="https://wa.me/393272771529?text=Ciao%21%20Vorrei%20informazioni%20per%20un%20soggiorno%20ad%20Aracoeli%2020">Scrivici su WhatsApp</a>
+    </div>
+    <p class="alt">
+      <a href="/cosa-fare.html">Cosa fare in Alta Murgia</a> &nbsp;·&nbsp;
+      <a href="/miulli.html">Vicino all'Ospedale Miulli</a> &nbsp;·&nbsp;
+      <a href="/en.html">English</a>
+    </p>
+  </main>
+</body>
+</html>
