@@ -61,15 +61,15 @@ section{padding:110px 0}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
 
 /* ===== NAV ===== */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .4s ease;padding:26px 0}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .4s ease;padding:26px 0;background:linear-gradient(rgba(14,12,8,.60) 0%,rgba(14,12,8,.34) 55%,rgba(14,12,8,0) 100%)}
 nav.scrolled{background:rgba(251,250,246,.96);backdrop-filter:blur(12px);padding:14px 0;box-shadow:0 1px 0 var(--pietra)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between}
-.logo{font-family:var(--serif);font-size:1.5rem;font-weight:600;letter-spacing:.02em;color:var(--bianco);text-decoration:none;transition:color .4s;display:inline-flex;align-items:center;gap:11px}
+.logo{font-family:var(--serif);font-size:1.5rem;font-weight:600;letter-spacing:.02em;color:var(--bianco);text-decoration:none;transition:color .4s;display:inline-flex;align-items:center;gap:11px;text-shadow:0 1px 10px rgba(0,0,0,.45)}
 .logo img{height:42px;width:auto;flex-shrink:0;filter:drop-shadow(0 2px 6px rgba(0,0,0,.3))}
 nav.scrolled .logo{color:var(--ink)}
 .logo em{font-style:normal;color:var(--grano)}
 .navlinks{display:flex;gap:34px;align-items:center}
-.navlinks a{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;font-weight:400;text-decoration:none;color:rgba(251,250,246,.85);transition:color .3s}
+.navlinks a{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;font-weight:400;text-decoration:none;color:rgba(251,250,246,.95);transition:color .3s;text-shadow:0 1px 8px rgba(0,0,0,.5)}
 nav.scrolled .navlinks a{color:var(--grigio)}
 .navlinks a:hover{color:var(--grano)!important}
 .navlinks a.cta{border:1px solid currentColor;padding:10px 22px}
@@ -80,9 +80,9 @@ nav .wrap>.logo{flex:0 0 auto;white-space:nowrap}
 @media(min-width:901px) and (max-width:1420px){.navlinks{gap:20px}.navlinks a{font-size:.71rem;letter-spacing:.13em}.navlinks a.cta{padding:9px 15px}}
 
 /* ===== HERO ===== */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;background:linear-gradient(rgba(60,40,12,.30),rgba(40,30,15,.40) 45%,rgba(18,18,14,.72)),url('img/hero-murgia-tramonto.webp') center/cover fixed;color:var(--bianco)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;background:linear-gradient(rgba(26,19,7,.56) 0%,rgba(32,24,10,.52) 30%,rgba(26,22,13,.60) 62%,rgba(16,16,12,.80) 100%),url('img/hero-murgia-tramonto.webp') center/cover fixed;color:var(--bianco)}
 .hero-inner{padding:140px 0 120px}
-.hero .eyebrow{color:var(--grano)}
+.hero .eyebrow{color:rgba(251,250,246,.94);text-shadow:0 1px 10px rgba(0,0,0,.6)}
 .hero h1{font-size:clamp(2.8rem,6.5vw,5.2rem);font-weight:500;max-width:16ch;margin:24px 0 28px;letter-spacing:-.01em;text-shadow:0 2px 24px rgba(0,0,0,.35)}
 .hero h1 i{font-style:italic;color:var(--grano)}
 .hero p{font-size:1.22rem;font-weight:400;max-width:50ch;color:rgba(251,250,246,.97);text-shadow:0 1px 12px rgba(0,0,0,.4);margin-bottom:44px}
@@ -91,8 +91,10 @@ nav .wrap>.logo{flex:0 0 auto;white-space:nowrap}
 .hero-meta .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
 .hm{padding:26px 28px 26px 0;border-right:1px solid rgba(251,250,246,.22)}
 .hm:last-child{border-right:none}
-.hm b{display:block;font-family:var(--serif);font-size:1.45rem;font-weight:600;color:var(--grano)}
-.hm span{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(251,250,246,.75)}
+.hm b{display:block;font-family:var(--serif);font-size:1.45rem;font-weight:600;color:#EBC98A}
+.hm a{color:inherit;text-decoration:none;display:block}
+.hm a:hover b{text-decoration:underline}
+.hm span{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(251,250,246,.88)}
 @media(max-width:760px){.hero{background-attachment:scroll}.hero-meta .wrap{grid-template-columns:1fr}.hm{border-right:none;border-bottom:1px solid rgba(251,250,246,.18);padding:14px 0}}
 
 /* ===== INTRO (bianco calcare) ===== */
@@ -223,8 +225,9 @@ nav .wrap>.logo{flex:0 0 auto;white-space:nowrap}
 .mapframe{margin-top:26px;border-radius:4px;overflow:hidden;border:1px solid rgba(242,238,227,.2)}
 .mapframe iframe{display:block;width:100%;height:300px;border:0;filter:grayscale(.2) contrast(1.05)}
 .langsw{display:inline-flex;gap:2px;align-items:center;margin-left:8px;font-size:.72rem;letter-spacing:.1em;font-weight:600}
-.langsw a{padding:5px 8px;text-decoration:none;border-radius:3px;color:inherit;opacity:.55}
+.langsw a{padding:5px 8px;text-decoration:none;border-radius:3px;color:inherit;opacity:.95;text-shadow:0 1px 6px rgba(0,0,0,.55)}
 .langsw a.act{opacity:1;color:var(--grano)}
+nav:not(.scrolled) .langsw a.act{color:#F3DFB0}
 .langsw span{opacity:.35}
 @media(max-width:560px){.cform .row{grid-template-columns:1fr}}
 
@@ -320,7 +323,7 @@ footer a:hover{color:var(--grano)}
 /* ===== FIX HERO STACK MOBILE (definitivo) ===== */
 @media(max-width:760px){
   .hero{display:block !important;min-height:auto !important;padding:100px 0 0 !important}
-  .hero-inner{padding:36px 0 30px !important;width:100%}
+  .hero-inner{padding:36px 22px 30px !important;width:100%}
   .hero .wrap.hero-inner{display:block}
   .hero-meta{position:static !important;width:100%;margin-top:0;display:block}
   .hero-meta .wrap{display:block !important;padding-top:0;padding-bottom:0}
@@ -435,19 +438,19 @@ footer a:hover{color:var(--grano)}
 
 <header class="hero" id="top">
   <div class="wrap hero-inner">
-    <div class="eyebrow">Cassano delle Murge — Alta Murgia National Park, Italy</div>
+    <div class="eyebrow">B&amp;B, hostel and suite · Cassano delle Murge, Puglia</div>
     <h1>A home on the way <i>between Bari and Matera</i></h1>
-    <p>The designer rooms Lina and Mimì, a hostel for Via Peuceta pilgrims and the suite with kitchen and terrace — in the old town of Cassano delle Murge. Stone, silence and the Alta Murgia right outside the door.</p>
+    <p>Two stone double rooms, the pilgrim hostel on the Via Peuceta and a suite with kitchen and terrace, in the old town. Book direct, let yourself in with a code, at any hour.</p>
     <div class="hero-actions">
       <a href="https://wa.me/393272771529?text=Hi%21%20I%27d%20like%20info%20about%20a%20stay%20at%20Aracoeli%2020" class="btn wa">Book on WhatsApp</a>
-      <a href="#camere" class="btn light">Discover Lina & Mimì</a>
+      <a href="#camere" class="btn light">Rooms and rates</a>
     </div>
   </div>
   <div class="hero-meta">
     <div class="wrap">
-      <div class="hm"><b>9.7</b><span>Guest score on Booking.com</span></div>
-      <div class="hm"><b>Tappa 2</b><span>Official Via Peuceta stop — Cammino Materano</span></div>
-      <div class="hm"><b>Lina & Mimì</b><span>Designer stone double rooms · from €70</span></div>
+      <div class="hm"><b>5.0</b><span>on Google · 9.7 on Booking.com</span></div>
+      <div class="hm"><b>Stage 2</b><span>official Via Peuceta stop — Cammino Materano</span></div>
+      <div class="hm"><a href="miulli-en.html"><b>5 km</b><span>from Miulli Hospital · direct bus in 10 min</span></a></div>
     </div>
   </div>
 </header>
